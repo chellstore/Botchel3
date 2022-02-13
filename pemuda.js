@@ -938,6 +938,10 @@ if (budy.includes(`💃`)) {
                   satu = fs.readFileSync('./30detik/3.mp3');
 pemuda.sendMessage(from, satu, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 }
+if (budy.includes(`CHELLSTORE`)) {
+                  satu = fs.readFileSync('./30detik/chels.mp3');
+pemuda.sendMessage(from, satu, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+}
 if (budy.includes(`onichan`)) {
                   lima = fs.readFileSync('./30detik/onichan.mp3');
 pemuda.sendMessage(from, lima, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
@@ -1127,7 +1131,7 @@ wa.me/62896465831949
 *ɴʙ : copylist yatim*`
 sendButLocation(from, `${menu}`, `${uwu}© Chellbot${uwu}`, {jpegThumbnail:ofrply}, [{buttonId:`${prefix}owner`,buttonText:{displayText:'OWNER'},type:1}], {contextInfo: { mentionedJid: [ptod,dtod,otod,stod]}})
 break       
-case 'done':
+case 'chellstore':
         ptod = "62896465831949@s.whatsapp.net"
         stod = `${sender}`
         uwu = '```'
@@ -1135,7 +1139,17 @@ case 'done':
 				stst = stst.status == 401 ? '' : stst.status
 			
        menu = `*Jika transaksi sudah selesai silahkan klik/ketik DONE*`
-       sendButLocation(from, `${menu}`, `${uwu}©Chellbot${uwu}`, {jpegThumbnail:ofrply}, [{buttonId:`${prefix}dnnn`,buttonText:{displayText:'DONE'},type:1}], {contextInfo: { mentionedJid: [ptod,dtod,otod,stod]}})
+       sendButLocation(from, `${menu}`, `${uwu}©Chellbot${uwu}`, {jpegThumbnail:ofrply}, [{buttonId:`${prefix}done`,buttonText:{displayText:'DONE'},type:1}], {contextInfo: { mentionedJid: [ptod,dtod,otod,stod]}})
+break
+case 'done':
+        ptod = "62896465831949@s.whatsapp.net"
+        stod = `${sender}`
+        uwu = '```'
+       stst = await pemuda.getStatus(`${sender.split('@')[0]}@c.us`)
+				stst = stst.status == 401 ? '' : stst.status
+			
+       menu = `*_Wita_* : ${timeWita}`
+       sendButLocation(from, `${menu}`, `${uwu}©Chellbot${uwu}`, {jpegThumbnail:ofrply}, [{buttonId:`${prefix}done`,buttonText:{displayText:'DONE'},type:1}], {contextInfo: { mentionedJid: [ptod,dtod,otod,stod]}})
 break
 case 'menu':
         ptod = "62896465831949@s.whatsapp.net"
@@ -7243,7 +7257,7 @@ case 'jasashare':
        stst = await pemuda.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			
-       menu = `🇯‌🇦‌🇸‌🇦‌ 🇸‌🇭‌🇦‌🇷‌🇪‌ 🇴‌🇵‌🇧‌🇷‌
+       menu = `🇯‌🇦‌🇸‌🇦‌ 🇸‌🇭‌🇦‌🇷‌🇪‌
        
 *☁️ ֙ 𖥻 Chellstore*
 ▔ٰ‌ּ‌￣ּ֪▔ٰ‌ּ‌￣ּ֪▔ٰ‌ּ‌￣ּ֪▔ٰ‌ּ‌￣ּ֪▔ٰ‌ּ‌￣ּ֪▔ٰ‌ּ‌▔ٰ‌ּ‌￣ּ֪▔ٰ‌ּ‌
